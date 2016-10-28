@@ -1,0 +1,236 @@
+/*Header */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    position: 0;
+}
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #3E4651; /* position on image*/
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+.animatedHeader .large-header {
+	background-image: url(../img/header.svg);
+	background-position: center bottom;
+    width: 100%;
+}
+#wrapper{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#main-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+    
+}
+
+#logo{
+    width: 100%;
+}
+	.widget-simplenav { margin-left:-5px; }		
+	.widget-simplenav a{ margin:0 5px; }
+
+.arrow-light { /** white arrow in header **/
+    display: inline-block;
+    position:fixed;
+    top: 90%;
+    outline: #3E4651;
+    left:50%;
+    transform: translateX(-50%);/** transfms x axisor **/
+    color: #fff; /** text **/ 
+    text-align: center;
+    font-size: 2em;
+    border: solid 2px;
+    padding: 10px 20px;
+}
+.arrow-light:hover,
+.arrow-light:active {
+  color: #5EC6AB;
+border: solid 2px #5ec6ab;
+    
+}.arrow-up { /** white arrow in header **/
+    display: inline-block;
+    position:fixed;
+    top: 90%;
+    outline: #3E4651;
+    right: 2%; /** center **/
+    color: #fff; /** text **/ 
+    text-align: right;
+    font-size: 1.5em;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+}
+
+
+.arrow-dark{ /** dark arrows in sections **/
+    padding: 10px 20px;
+    border: 1px solid #3E4651;
+    text-align: center;
+    text-decoration: none;
+    color: #3E4651;
+    font-size: 1em;
+}
+.arrow-dark:hover,
+.arrow-dark:active{
+    background-color: #3E4651;
+    text-align: center;
+    color: #fff;
+}
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin-right: 5%;
+    padding: 0;
+    overflow: hidden;
+}
+ul.topnav li {float: right;}
+ul.topnav li a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    font-family: raleway, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+    background-color: #fff;
+    color: #3E4651;
+}
+body{
+    background-color: #E7E7E7;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+section{
+    margin-left: 3%;
+    margin-right: 3%;
+    font-family: raleway, sans-serif;
+    font-size: 20px;
+    line-height: 1.45;
+    color: #293d3d;
+    margin-top: 10%;
+}
+
+.title{
+    text-align: center;    
+}
+/***socials **/
+.social{
+    text-align: left;
+    
+}
+.fa-twitter{ 
+    color: #fff;
+    padding: 5px;
+}
+.fa-twitter:hover,
+.fa-twitter:active{
+    color: #5EC6AB;
+}
+.fa-pinterest{
+    color: #fff;  
+    padding: 5px;
+}
+.fa-pinterest:hover,
+.fa-pinterest:active{
+    color: #5EC6AB;
+}
+.fa-linkedin{
+    color: #fff;
+    padding: 5px;
+}
+.fa-linkedin:hover,
+.fa-linkedin:active{
+    color: #5EC6AB;
+}
+
+.fa-behance{
+    color: #fff;
+    padding: 5px;
+}
+.fa-behance:hover,
+.fa-behance:active{
+    color: #5EC6AB;
+}
+/****************************************/
+#contact{
+    text-align: center;
+}
+.arrow{
+    text-align: center;
+    margin-top: 2%;
+}
+.strangeArrow{
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+footer{
+    background-color:#3E4651;
+    
+}
+
+.break{
+    font-family: areil;
+    font-size: 4em;
+    text-align: center;
+    letter-spacing: 20px;
+    color: #c7c7c7;
+}
+
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+
+.columnsContainer { 
+    position: relative; 
+     
+}
+
+.leftColumn, .rightColumn{ 
+    padding: 1.25em; 
+ 
+}
+
+.leftColumn { 
+    margin-bottom: .5em;
+    color: #353b3c;
+    text-align: center;
+}
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px ) {
+  .leftColumn { margin-right: 50%; }
+
+    .rightColumn { 
+        position: absolute; 
+        top: 0; 
+        right: 0;
+        width: 50%; }   
+    
+}
