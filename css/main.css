@@ -14,9 +14,10 @@
 	z-index: 1;
 }
 .animatedHeader .large-header {
-	background-image: url(../img/Header.svg);
+	background-image: url(../img/Header.png);
 	background-position: center bottom;
     width: 100%;
+    background-color: #3E4651;
 }
 #main-title {
 	position: absolute;
@@ -34,7 +35,7 @@
 
 .arrow-light { /** white arrow in header **/
     display: inline-block;
-    position:fixed;
+    position:absolute;
     top: 90%;
     outline: #3E4651;
     left:50%;
