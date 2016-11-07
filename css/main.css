@@ -54,15 +54,18 @@ border: solid 2px #5ec6ab;
     display: inline-block;
     position:fixed;
     top: 90%;
-    outline: #3E4651;
-    right: 2%; /** center **/
-    color: #fff; /** text **/ 
+    color: #fff;
+    right: 2%; /** right **/
     text-align: right;
     font-size: 1.5em;
     border: 1px solid #fff;
     padding: 10px 20px;
 }
-
+.arrow-up:hover,
+.arrow-up:active{
+    color: #5EC6AB;
+    border: solid 2px #5EC6AB;
+}
 
 .arrow-dark{ /** dark arrows in sections **/
     padding: 10px 20px;
@@ -107,13 +110,18 @@ body{
     background-color: #E7E7E7;
 }
 h2{
+    
     font-size: 50px;
     text-align: center;
 }
 h3{
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 30px;
     text-align: center;
+    
 }
+
 
 
 
