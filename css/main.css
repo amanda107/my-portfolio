@@ -150,6 +150,7 @@ section{
 /***socials **/
 .social{
     text-align: center; 
+    padding: 20px 0;
 }
 .social a{
     display: inline-block;
