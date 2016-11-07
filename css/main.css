@@ -55,20 +55,20 @@ border: solid 2px #5ec6ab;
     display: inline-block;
     position:fixed;
     top: 90%;
-    color: #fff;
+    color: #5EC6AB;
     right: 2%; /** right **/
     text-align: right;
     font-size: 1.5em;
-    border: 1px solid #fff;
+    border: 2px solid #5EC6AB;
     padding: 10px 20px;
 }
 .arrow-up:hover,
 .arrow-up:active{
-    color: #5EC6AB;
-    border: solid 2px #5EC6AB;
+    color: #fff;
+    border: solid 2px #fff;
 }
 
-.arrow-dark{ /** dark arrows in sections **/
+.arrow-dark{ /** Contact me **/
     padding: 10px 20px;
     border: 1px solid #3E4651;
     text-align: center;
@@ -82,6 +82,10 @@ border: solid 2px #5ec6ab;
     background-color: #3E4651;
     text-align: center;
     color: #fff;
+}
+#me{
+    width: 250px;
+    border-radius: 100%;
 }
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
@@ -122,6 +126,8 @@ h2{
     line-height: 20px;
     font-size: 50px;
     text-align: center;
+    line-height: 50px;
+    padding-bottom: 20px;
 }
 h3{
     margin-top: 30px;
@@ -136,31 +142,35 @@ h4{
     font-size: 30px;
     text-align: center; 
 }
-
 p{
     padding-bottom: 10px;
 }
-
-
-
-
+#footer-text{
+   color: #fff; 
+}
 section{
-    margin-left: 3%;
-    margin-right: 3%;
+    margin-left: 100px;
+    margin-right: 100px;
     font-family: raleway, sans-serif;
     font-size: 20px;
     line-height: 1.45;
     color: #293d3d;
-    margin-top: 10%;
+    margin-top: 200px;
 }
 
+@media only screen and (max-width: 720px) {
+    section{
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
 .title{
     text-align: center;    
 }
 /***socials **/
 .social{
     text-align: center; 
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 .social a{
     display: inline-block;
@@ -200,32 +210,7 @@ footer{
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-.columnsContainer { 
-    position: relative; 
-     
-}
 
-.leftColumn, .rightColumn{ 
-    padding: 1.25em; 
- 
-}
-
-.leftColumn { 
-    margin-bottom: .5em;
-    color: #353b3c;
-    text-align: center;
-}
-/* MEDIA QUERIES */
-@media screen and (min-width: 768px ) {
-  .leftColumn { margin-right: 50%; }
-
-    .rightColumn { 
-        position: absolute; 
-        top: 0; 
-        right: 0;
-        width: 50%; }   
-    
-}
 
 /**
  * Flexbox
