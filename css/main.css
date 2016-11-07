@@ -102,7 +102,14 @@ ul.topnav li a {
     font-family: raleway, sans-serif;
     letter-spacing: 2px;
 }
-
+.clearfix:before,
+.clearfix:after{
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
 /* Change background color of links on hover */
 ul.topnav li a:hover {
     background-color: #fff;
@@ -112,7 +119,7 @@ body{
     background-color: #E7E7E7;
 }
 h2{
-    
+    line-height: 20px;
     font-size: 50px;
     text-align: center;
 }
@@ -127,8 +134,11 @@ h4{
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 30px;
-    text-align: center;
-    
+    text-align: center; 
+}
+
+p{
+    padding-bottom: 10px;
 }
 
 
@@ -172,15 +182,10 @@ section{
     text-align: center;
     margin-top: 2%;
 }
-.strangeArrow{
-    text-align: center;
-    margin-top: 200px;
-
-}
 
 footer{
     background-color:#3E4651;
-    height: 120px;
+    height: 130px;
 }
 
 .break{
@@ -191,14 +196,9 @@ footer{
     color: #c7c7c7;
     padding-top:100px;
 }
-
-
-
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
-
-
 
 .columnsContainer { 
     position: relative; 
@@ -225,4 +225,42 @@ footer{
         right: 0;
         width: 50%; }   
     
+}
+
+/**
+ * Flexbox
+ */
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.flexbox.pull-horz-center {
+  justify-content: center;
+  align-content: flex-start;
+}
+.flexbox.pull-vert-center {
+  justify-content: flex-start;
+  align-content: center;
+}
+.flexbox>* {
+    padding:0;
+    position:relative;
+    margin: 0 10px 10px 10px;
+    -webkit-flex: 0 0 0px;
+    flex: 0 0 0px;
+}
+.flexbox.grid>* {
+  -webkit-flex: 1 0 0px;
+  flex: 1 0 0px;
+}
+
+@media only screen and (max-width: 720px) {
+    .flexbox {
+        flex-direction: column;
+    }
 }
