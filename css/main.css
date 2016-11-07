@@ -148,42 +148,20 @@ section{
 }
 /***socials **/
 .social{
-    text-align: left;
-    
+    text-align: left;  
 }
-.fa-twitter{ 
+.social a{
+    display: inline-block;
+    vertical-align: bottom;
+    text-decoration: none;
     color: #fff;
     padding: 5px;
 }
-.fa-twitter:hover,
-.fa-twitter:active{
-    color: #5EC6AB;
-}
-.fa-pinterest{
-    color: #fff;  
-    padding: 5px;
-}
-.fa-pinterest:hover,
-.fa-pinterest:active{
-    color: #5EC6AB;
-}
-.fa-linkedin{
-    color: #fff;
-    padding: 5px;
-}
-.fa-linkedin:hover,
-.fa-linkedin:active{
+.social a:hover,
+.social a:active{
     color: #5EC6AB;
 }
 
-.fa-behance{
-    color: #fff;
-    padding: 5px;
-}
-.fa-behance:hover,
-.fa-behance:active{
-    color: #5EC6AB;
-}
 /****************************************/
 #contact{
     text-align: center;
