@@ -75,6 +75,7 @@ border: solid 2px #5ec6ab;
     text-decoration: none;
     color: #3E4651;
     font-size: 1em;
+
 }
 .arrow-dark:hover,
 .arrow-dark:active{
@@ -148,7 +149,7 @@ section{
 }
 /***socials **/
 .social{
-    text-align: left;  
+    text-align: center; 
 }
 .social a{
     display: inline-block;
@@ -178,7 +179,7 @@ section{
 
 footer{
     background-color:#3E4651;
-    
+    height: 120px;
 }
 
 .break{
