@@ -193,10 +193,12 @@ section{
 
 footer{
     background-color:#3E4651;
-    height: 200px;
+    height: 220px;
 }
 #footer-text{
-   color: #fff; 
+    color: #fff; 
+    height: 120px;
+
 }
 .break{
     font-family: areil;
