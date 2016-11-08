@@ -145,9 +145,6 @@ h4{
 p{
     padding-bottom: 10px;
 }
-#footer-text{
-   color: #fff; 
-}
 section{
     margin-left: 100px;
     margin-right: 100px;
@@ -178,6 +175,7 @@ section{
     text-decoration: none;
     color: #fff;
     padding: 5px;
+    padding-top: 4px;
 }
 .social a:hover,
 .social a:active{
@@ -195,9 +193,11 @@ section{
 
 footer{
     background-color:#3E4651;
-    height: 130px;
+    height: 200px;
 }
-
+#footer-text{
+   color: #fff; 
+}
 .break{
     font-family: areil;
     font-size: 4em;
